@@ -32,7 +32,7 @@ with dataset:
     #st.header('IM trying streamlit')
     st.text('This is the GRB dummy data. The GRB data is usually a few gigabytes and I am trying streamlit and GitHUb for the first time so I used dummy data')
 
-    mydata = pd.read_csv('data_2.csv')
+    mydata = pd.read_csv('data_2.csv') 
     st.write(mydata.head())   
     st.subheader('')
     st.text('Provided we are dealing with the whole GRB data set, the distribution of one parameter (in this case t90) is essential')
