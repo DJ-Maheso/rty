@@ -50,7 +50,7 @@ with modeltraining:
     slide = sel_col.slider('Redshift selection', min_value=0, max_value=10, value=1)
     n_estimators = sel_col.selectbox('Number of estimators', options=[1,3,5,10],index=0)
     input_features = sel_col.text_input('Redshift','redshift')   
-    regr = RandomForestRegressor(max_depth = slide, n_estimators=n_estimators)
+    #regr = RandomForestRegressor(max_depth = slide, n_estimators=n_estimators)
     x_1= mydata[[input_features]]
     y_1= mydata[['redshift']]
 
