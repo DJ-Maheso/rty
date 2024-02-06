@@ -55,20 +55,20 @@ with modeltraining:
     y_1= mydata[['redshift']]
 
 
-    regr.fit(x_1,y_1)
-    prediction = regr.predict(y_1)
+    #regr.fit(x_1,y_1)
+    #prediction = regr.predict(y_1)
 
     st.text('Depending on the selected redshift on the slider, the errors also change') 
   
 
-    disp_col.subheader('mean absolute error of the model is:')
-    disp_col.write(mean_absolute_error(y_1,prediction))
+    #disp_col.subheader('mean absolute error of the model is:')
+    #disp_col.write(mean_absolute_error(y_1,prediction))
 
-    disp_col.subheader('mean absolute error of the model is:')
-    disp_col.write(mean_squared_error(y_1,prediction))
+    #disp_col.subheader('mean absolute error of the model is:')
+    #disp_col.write(mean_squared_error(y_1,prediction))
 
-    disp_col.subheader('mean absolute error of the model is:')
-    disp_col.write(r2_score(y_1,prediction))
+    #disp_col.subheader('mean absolute error of the model is:')
+    #disp_col.write(r2_score(y_1,prediction))
 
 
 
